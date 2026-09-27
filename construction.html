@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gros œuvre dans les Alpes-Maritimes — Orion Construction</title>
+  <meta name="description" content="Gros œuvre dans les Alpes-Maritimes : fondations, élévation, dalles, piscines, charpente. Villas, extensions, bâtiments professionnels. Devis gratuit, intervention dans tout le 06.">
+  <meta name="theme-color" content="#111111">
+  <link rel="canonical" href="https://www.orion-construction.fr/construction.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Gros œuvre dans les Alpes-Maritimes — Orion Construction">
+  <meta property="og:description" content="Fondations, élévation, dalles, piscines, charpente. De la villa individuelle aux ouvrages techniques dans les Alpes-Maritimes.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.orion-construction.fr/construction.html">
+  <meta property="og:image" content="https://www.orion-construction.fr/images/photo/coffrage_envoi_beton_courb%C3%A9.jpeg">
+  <meta property="og:locale" content="fr_FR">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Schema.org — Service + Breadcrumb -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Gros œuvre",
+    "provider": {
+      "@type": "GeneralContractor",
+      "name": "Orion Construction",
+      "url": "https://www.orion-construction.fr"
+    },
+    "description": "Gros œuvre dans les Alpes-Maritimes : fondations, élévation, dalles, piscines, charpente pour villas, extensions et bâtiments professionnels.",
+    "areaServed": {
+      "@type": "AdministrativeArea",
+      "name": "Alpes-Maritimes"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://www.orion-construction.fr/" },
+      { "@type": "ListItem", "position": 2, "name": "Gros œuvre", "item": "https://www.orion-construction.fr/construction.html" }
+    ]
+  }
+  </script>
+
+  <style>
+    /* Page-specific overrides */
+    .page-hero {
+      min-height: 400px;
+    }
+    .intro-block__image {
+      aspect-ratio: 4/5;
+    }
+    .intro-block__image img {
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .prestations__grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-4);
+    }
+    .prestation-card {
+      position: relative;
+      padding: var(--space-8);
+      border: 1px solid var(--color-dark-border);
+      transition: border-color var(--duration-normal) ease;
+    }
+    .prestation-card:hover {
+      border-color: var(--color-bronze);
+    }
+    .prestation-card__number {
+      font-size: var(--text-4xl);
+      font-weight: var(--weight-light);
+      color: rgba(255,255,255,0.05);
+      line-height: 1;
+      margin-bottom: var(--space-4);
+    }
+    .prestation-card__title {
+      font-size: var(--text-xl);
+      font-weight: var(--weight-regular);
+      color: var(--color-white);
+      margin-bottom: var(--space-3);
+    }
+    .prestation-card__desc {
+      font-size: var(--text-sm);
+      font-weight: var(--weight-light);
+      color: var(--color-text-muted);
+      line-height: var(--leading-normal);
+    }
+
+    @media (max-width: 1024px) {
+      .intro-block__image {
+        aspect-ratio: 16/9;
+      }
+    }
+    .gallery-mosaic {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto auto;
+      gap: var(--space-4);
+    }
+    .gallery-mosaic__item {
+      overflow: hidden;
+      position: relative;
+    }
+    .gallery-mosaic__item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform var(--duration-slow) ease;
+    }
+    .gallery-mosaic__item:hover img {
+      transform: scale(1.03);
+    }
+    .gallery-mosaic__item--wide {
+      grid-column: span 2;
+    }
+    .gallery-mosaic__item--tall {
+      grid-row: span 2;
+    }
+    .gallery-mosaic__caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: var(--space-6) var(--space-4) var(--space-4);
+      background: linear-gradient(transparent, rgba(0,0,0,0.7));
+      font-size: var(--text-sm);
+      font-weight: var(--weight-light);
+      color: var(--color-white);
+    }
+
+    @media (max-width: 768px) {
+      .prestations__grid {
+        grid-template-columns: 1fr;
+      }
+      .gallery-mosaic {
+        grid-template-columns: 1fr;
+      }
+      .gallery-mosaic__item--wide {
+        grid-column: span 1;
+      }
+      .gallery-mosaic__item--tall {
+        grid-row: span 1;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <a href="#main" class="skip-link">Aller au contenu principal</a>
+
+  <!-- HEADER -->
+  <header class="header" role="banner">
+    <div class="container">
+      <div class="header__inner">
+        <a href="index.html" class="header__logo" aria-label="Orion Construction — Accueil">
+          <img src="images/logo_white.svg" alt="Orion Construction" class="header__logo-icon">
+        </a>
+
+        <nav class="header__nav" aria-label="Navigation principale">
+          <ul class="header__nav-links">
+            <li><a href="index.html#services" class="header__nav-link header__nav-link--active">Services</a></li>
+            <li><a href="realisations.html" class="header__nav-link">Réalisations</a></li>
+            <li><a href="a-propos.html" class="header__nav-link">À propos</a></li>
+            <li><a href="zone-intervention.html" class="header__nav-link">Zone</a></li>
+            <li><a href="contact.html" class="header__nav-link">Contact</a></li>
+          </ul>
+
+          <a href="tel:+33767996896" class="header__phone" aria-label="Appelez-nous">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            <span>07 67 99 68 96</span>
+          </a>
+
+          <a href="contact.html?service=construction" class="btn btn--primary btn--sm header__cta">Demander un devis</a>
+        </nav>
+
+        <button class="header__hamburger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE MENU -->
+  <nav class="mobile-menu" id="mobile-menu" aria-label="Menu mobile" aria-hidden="true">
+    <ul class="mobile-menu__links">
+      <li><a href="index.html" class="mobile-menu__link">Accueil</a></li>
+      <li><a href="index.html#services" class="mobile-menu__link">Services</a></li>
+      <li><a href="realisations.html" class="mobile-menu__link">Réalisations</a></li>
+      <li><a href="a-propos.html" class="mobile-menu__link">À propos</a></li>
+      <li><a href="zone-intervention.html" class="mobile-menu__link">Zone d'intervention</a></li>
+      <li><a href="contact.html" class="mobile-menu__link">Contact</a></li>
+    </ul>
+    <div class="mobile-menu__contact">
+      <a href="tel:+33767996896" class="btn btn--primary">07 67 99 68 96</a>
+      <a href="contact.html?service=construction" class="btn btn--outline">Demander un devis</a>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero__bg">
+      <img src="images/photo/coffrage_envoi_beton_courbé.jpeg" alt="Coffrage béton de grande envergure avec panneaux Doka — Orion Construction" width="1920" height="1080" fetchpriority="high">
+    </div>
+    <div class="page-hero__overlay"></div>
+    <div class="container">
+      <div class="page-hero__content">
+        <nav class="breadcrumb" aria-label="Fil d'Ariane">
+          <a href="index.html">Accueil</a>
+          <span class="breadcrumb__separator" aria-hidden="true">/</span>
+          <span aria-current="page">Gros œuvre</span>
+        </nav>
+        <h1 style="font-size: clamp(2rem, 5vw, var(--text-4xl)); font-weight: var(--weight-light); color: var(--color-white); margin-bottom: var(--space-4);">Gros œuvre dans les Alpes-Maritimes</h1>
+        <p style="font-size: var(--text-lg); font-weight: var(--weight-light); color: var(--color-text-muted); max-width: 550px;">Extensions, piscines, dalles, murs, ouvertures, ouvrages de maçonnerie — du terrassement à la structure, la solidité de chaque projet commence ici.</p>
+      </div>
+    </div>
+  </section>
+
+  <main id="main">
+
+    <!-- INTRODUCTION -->
+    <section class="section--dark" aria-labelledby="intro-heading">
+      <div class="container">
+        <div class="intro-block reveal">
+          <div>
+            <span class="overline">Gros œuvre</span>
+            <h2 id="intro-heading" style="margin-bottom: var(--space-6);">La base de tout projet solide</h2>
+            <p style="margin-bottom: var(--space-4);">Orion Construction réalise des projets de construction dans les Alpes-Maritimes : villas, maisons individuelles, extensions, piscines et bâtiments à usage professionnel. Nous prenons en charge l'intégralité du gros œuvre, de la fondation à la toiture.</p>
+            <p style="margin-bottom: var(--space-4);">Chaque chantier est différent. Terrains en pente, contraintes sismiques du département (zone 4), réglementations locales — nous connaissons les particularités de la construction dans le 06 et adaptons nos méthodes en conséquence.</p>
+            <p style="color: var(--color-text-muted);">Notre approche repose sur une exécution soignée, des matériaux adaptés au climat méditerranéen et un suivi de chantier rigoureux. Nous travaillons avec une équipe permanente, ce qui garantit la cohérence et la qualité de chaque réalisation.</p>
+          </div>
+          <div class="intro-block__image">
+            <img src="images/Gros_oeuvre/Construction_falaise.jpeg" alt="Construction en béton armé à flanc de falaise en bord de mer — Orion Construction" width="2048" height="1536" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRESTATIONS -->
+    <section class="section--darker" aria-labelledby="prestations-heading">
+      <div class="container">
+        <div class="reveal" style="margin-bottom: var(--space-12);">
+          <span class="overline">Nos prestations</span>
+          <h2 id="prestations-heading">Ce que nous construisons</h2>
+        </div>
+
+        <div class="prestations__grid reveal-stagger">
+
+          <div class="prestation-card">
+            <span class="prestation-card__number">01</span>
+            <h3 class="prestation-card__title">Maisons individuelles et villas</h3>
+            <p class="prestation-card__desc">Construction de maisons et villas sur mesure dans les Alpes-Maritimes. Fondations, élévation des murs, dalles, charpente — nous assurons l'ensemble du gros œuvre en tenant compte des contraintes du terrain et des spécificités architecturales méditerranéennes.</p>
+          </div>
+
+          <div class="prestation-card">
+            <span class="prestation-card__number">02</span>
+            <h3 class="prestation-card__title">Extensions et surélévations</h3>
+            <p class="prestation-card__desc">Agrandissement de l'espace habitable par extension latérale ou surélévation. Ces travaux demandent une parfaite maîtrise structurelle pour s'intégrer au bâti existant sans compromettre sa solidité. Études préalables, reprises en sous-œuvre si nécessaire.</p>
+          </div>
+
+          <div class="prestation-card">
+            <span class="prestation-card__number">03</span>
+            <h3 class="prestation-card__title">Piscines en béton armé</h3>
+            <p class="prestation-card__desc">Construction de piscines en béton armé dans les Alpes-Maritimes. Terrassement, structure, ferraillage, coulage et étanchéité — un bassin conçu pour durer, adapté aux contraintes du terrain et du climat méditerranéen.</p>
+          </div>
+
+          <div class="prestation-card">
+            <span class="prestation-card__number">04</span>
+            <h3 class="prestation-card__title">Murs, dalles et ouvertures</h3>
+            <p class="prestation-card__desc">Réalisation de murs porteurs, dalles béton, ouvertures dans des murs existants. Chaque intervention est dimensionnée selon les contraintes structurelles et sismiques du département des Alpes-Maritimes (zone 4).</p>
+          </div>
+
+          <div class="prestation-card">
+            <span class="prestation-card__number">05</span>
+            <h3 class="prestation-card__title">Bâtiments professionnels</h3>
+            <p class="prestation-card__desc">Locaux commerciaux, entrepôts, ateliers — nous réalisons des constructions à usage professionnel adaptées aux besoins de chaque activité. Structure, cloisonnement, conformité aux normes d'accessibilité et de sécurité.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERIE CHANTIERS -->
+    <section class="section--dark" aria-labelledby="gallery-heading">
+      <div class="container">
+        <div class="reveal" style="margin-bottom: var(--space-12);">
+          <span class="overline">En images</span>
+          <h2 id="gallery-heading">Nos chantiers de gros œuvre</h2>
+        </div>
+
+        <div class="gallery-mosaic reveal-stagger">
+
+          <div class="gallery-mosaic__item gallery-mosaic__item--wide" style="aspect-ratio: 16/9;">
+            <img src="images/Gros_oeuvre/fondation_piscine.jpeg" alt="Fondation de piscine en béton armé — radier coulé avec aciers en attente" width="4032" height="3024" loading="lazy">
+            <span class="gallery-mosaic__caption">Fondation piscine — radier et aciers en attente</span>
+          </div>
+
+          <div class="gallery-mosaic__item" style="aspect-ratio: 3/4;">
+            <img src="images/Gros_oeuvre/Escalier_béton.jpeg" alt="Escalier tournant en béton armé en cours de coffrage" width="3024" height="4032" loading="lazy">
+            <span class="gallery-mosaic__caption">Escalier béton armé — coffrage</span>
+          </div>
+
+          <div class="gallery-mosaic__item" style="aspect-ratio: 4/3;">
+            <img src="images/Gros_oeuvre/Construction_falaise.jpeg" alt="Construction à flanc de falaise en bord de mer — structure béton armé" width="2048" height="1536" loading="lazy">
+            <span class="gallery-mosaic__caption">Construction à flanc de falaise</span>
+          </div>
+
+          <div class="gallery-mosaic__item" style="aspect-ratio: 3/4;">
+            <img src="images/Gros_oeuvre/coffrage_courbé_v2.jpeg" alt="Coffrage courbé avec treillis d'armature pour mur en béton armé" width="3024" height="4032" loading="lazy">
+            <span class="gallery-mosaic__caption">Coffrage courbé — armature et bois</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- RÉALISATIONS LIÉES -->
+    <section class="section--darker" aria-labelledby="related-heading">
+      <div class="container">
+        <div class="reveal" style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: var(--space-12); flex-wrap: wrap; gap: var(--space-4);">
+          <div>
+            <span class="overline">Portfolio</span>
+            <h2 id="related-heading">Réalisations en gros œuvre</h2>
+          </div>
+          <a href="realisations.html" class="btn btn--outline btn--sm">Voir tout →</a>
+        </div>
+
+        <div class="realisations__grid reveal-stagger">
+
+          <a href="realisations/coffrage-beton-courbe.html" class="realisation-card realisation-card--standard">
+            <div class="realisation-card__image">
+              <img src="images/photo/coffrage_envoi_beton_courbé.jpeg" alt="Coffrage béton courbé avec panneaux Doka" width="800" height="600" loading="lazy">
+            </div>
+            <div class="realisation-card__content">
+              <span class="realisation-card__tag">Gros œuvre</span>
+              <h3 class="realisation-card__title">Coffrage béton courbé</h3>
+              <span class="realisation-card__location">Alpes-Maritimes</span>
+            </div>
+          </a>
+
+          <a href="realisations/escalier-beton-arme-villa.html" class="realisation-card realisation-card--standard">
+            <div class="realisation-card__image">
+              <img src="images/photo/Escalier_beton_arme_villa.jpeg" alt="Escalier hélicoïdal en béton armé dans une villa" width="800" height="600" loading="lazy">
+            </div>
+            <div class="realisation-card__content">
+              <span class="realisation-card__tag">Béton armé</span>
+              <h3 class="realisation-card__title">Escalier hélicoïdal en béton armé</h3>
+              <span class="realisation-card__location">Alpes-Maritimes</span>
+            </div>
+          </a>
+
+          <a href="savoir-faire-extension-escalier.html" class="realisation-card realisation-card--featured">
+            <div class="realisation-card__image">
+              <img src="images/extension_escalier/après.jpeg" alt="Extension de marches d'escalier en porte-à-faux — béton armé" width="2048" height="1536" loading="lazy">
+            </div>
+            <div class="realisation-card__content">
+              <span class="realisation-card__tag">Savoir-faire</span>
+              <h3 class="realisation-card__title">Extension escalier en porte-à-faux</h3>
+              <span class="realisation-card__location">Alpes-Maritimes</span>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section section--darker" aria-labelledby="cta-heading">
+      <div class="container">
+        <div class="reveal">
+          <span class="overline" style="text-align: center; display: block;">Votre projet</span>
+          <h2 class="cta-section__title" id="cta-heading">Vous avez un projet<br>de construction ?</h2>
+          <p class="cta-section__subtitle">Premier rendez-vous sur site. Devis détaillé, gratuit et sans engagement.</p>
+          <div style="display: flex; justify-content: center; gap: var(--space-4); flex-wrap: wrap;">
+            <a href="contact.html?service=construction" class="btn btn--primary btn--lg">Demander un devis</a>
+            <a href="tel:+33767996896" class="btn btn--outline btn--lg">07 67 99 68 96</a>
+          </div>
+          <p style="margin-top: var(--space-8); font-size: var(--text-sm); color: var(--color-text-faint);">Lundi – Vendredi : 7h – 18h · Samedi : 8h – 14h</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+
+        <div class="footer__brand">
+          <a href="index.html" class="header__logo" aria-label="Orion Construction">
+            <img src="images/logo_white.svg" alt="Orion Construction" class="header__logo-icon">
+          </a>
+          <p class="footer__brand-description">Gros œuvre, rénovation, carrelage, béton ciré et plomberie dans les Alpes-Maritimes. Du projet à la livraison, un seul interlocuteur.</p>
+        </div>
+
+        <div>
+          <h3 class="footer__heading">Services</h3>
+          <ul class="footer__links">
+            <li><a href="construction.html">Gros œuvre</a></li>
+            <li><a href="renovation.html">Rénovation</a></li>
+            <li><a href="carrelage.html">Carrelage &amp; faïence</a></li>
+            <li><a href="beton-cire.html">Béton ciré</a></li>
+            <li><a href="index.html#collaborateurs">Plomberie &amp; électricité</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer__heading">Entreprise</h3>
+          <ul class="footer__links">
+            <li><a href="realisations.html">Réalisations</a></li>
+            <li><a href="a-propos.html">À propos</a></li>
+            <li><a href="zone-intervention.html">Zone d'intervention</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="mentions-legales.html">Mentions légales</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer__heading">Contact</h3>
+          <ul class="footer__links">
+            <li><a href="tel:+33767996896">07 67 99 68 96</a></li>
+            <li><a href="mailto:contact@orion-construction.fr">contact@orion-construction.fr</a></li>
+            <li>14 rue François Carlo</li>
+            <li style="margin-top: var(--space-4); font-size: var(--text-xs); color: var(--color-text-faint);">Lun – Ven : 7h – 18h<br>Sam : 8h – 14h</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer__bottom">
+        <span>&copy; 2026 Orion Construction — SIRET 108 530 254 00011</span>
+        <a href="mentions-legales.html">Mentions légales</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MOBILE STICKY CTA -->
+  <div class="mobile-cta" aria-label="Actions rapides">
+    <a href="tel:+33767996896" class="btn btn--outline btn--sm">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+      Appeler
+    </a>
+    <a href="contact.html?service=construction" class="btn btn--primary btn--sm">Demander un devis</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

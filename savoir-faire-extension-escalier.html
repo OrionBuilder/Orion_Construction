@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Extension d'escalier en porte-à-faux — Savoir-faire Orion Construction</title>
+  <meta name="description" content="Élargissement de marches en béton armé sur un escalier en porte-à-faux. Coffrage sur mesure, ferraillage et coulage — un savoir-faire structurel exigeant. Alpes-Maritimes (06).">
+  <meta name="theme-color" content="#111111">
+  <link rel="canonical" href="https://www.orion-construction.fr/savoir-faire-extension-escalier.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Extension d'escalier en porte-à-faux — Orion Construction">
+  <meta property="og:description" content="Élargissement de marches en béton armé sur un escalier en porte-à-faux. Coffrage, ferraillage, coulage — savoir-faire structurel.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.orion-construction.fr/savoir-faire-extension-escalier.html">
+  <meta property="og:image" content="https://www.orion-construction.fr/images/extension_escalier/apr%C3%A8s.jpeg">
+  <meta property="og:locale" content="fr_FR">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Schema.org — BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://www.orion-construction.fr/" },
+      { "@type": "ListItem", "position": 2, "name": "Savoir-faire", "item": "https://www.orion-construction.fr/" },
+      { "@type": "ListItem", "position": 3, "name": "Extension d'escalier en porte-à-faux", "item": "https://www.orion-construction.fr/savoir-faire-extension-escalier.html" }
+    ]
+  }
+  </script>
+
+  <style>
+    .sf-hero {
+      position: relative;
+      min-height: 500px;
+      display: flex;
+      align-items: flex-end;
+      overflow: hidden;
+    }
+
+    .sf-hero__bg {
+      position: absolute;
+      inset: 0;
+    }
+
+    .sf-hero__bg img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 60%;
+    }
+
+    .sf-hero__overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        to top,
+        rgba(17, 17, 17, 0.95) 0%,
+        rgba(17, 17, 17, 0.5) 50%,
+        rgba(17, 17, 17, 0.3) 100%
+      );
+    }
+
+    .sf-hero__content {
+      position: relative;
+      z-index: 2;
+      padding-bottom: var(--space-12);
+      padding-top: calc(80px + var(--space-16));
+    }
+
+    .sf-badge {
+      display: inline-block;
+      font-size: var(--text-xs);
+      font-weight: var(--weight-medium);
+      letter-spacing: var(--tracking-widest);
+      text-transform: uppercase;
+      color: var(--color-bronze);
+      border: 1px solid var(--color-bronze);
+      padding: 6px 16px;
+      margin-bottom: var(--space-6);
+    }
+
+    .before-after {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-6);
+      align-items: start;
+    }
+
+    .before-after__item {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .before-after__item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      aspect-ratio: 3/4;
+    }
+
+    .before-after__label {
+      position: absolute;
+      top: var(--space-4);
+      left: var(--space-4);
+      font-size: var(--text-xs);
+      font-weight: var(--weight-medium);
+      letter-spacing: var(--tracking-widest);
+      text-transform: uppercase;
+      color: var(--color-white);
+      background: rgba(17, 17, 17, 0.75);
+      padding: 6px 14px;
+      backdrop-filter: blur(4px);
+    }
+
+    .before-after__label--after {
+      color: var(--color-bronze);
+    }
+
+    .tech-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-6);
+    }
+
+    .tech-card {
+      padding: var(--space-8);
+      border: 1px solid var(--color-dark-border);
+      transition: border-color var(--duration-normal) ease;
+    }
+
+    .tech-card:hover {
+      border-color: var(--color-bronze);
+    }
+
+    .tech-card__number {
+      font-size: var(--text-4xl);
+      font-weight: var(--weight-light);
+      color: rgba(184, 151, 106, 0.15);
+      line-height: 1;
+      margin-bottom: var(--space-4);
+    }
+
+    .tech-card__title {
+      font-size: var(--text-xl);
+      font-weight: var(--weight-regular);
+      color: var(--color-white);
+      margin-bottom: var(--space-3);
+    }
+
+    .tech-card__desc {
+      font-size: var(--text-sm);
+      font-weight: var(--weight-light);
+      color: var(--color-text-muted);
+      line-height: var(--leading-normal);
+    }
+
+    .challenge-block {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-12);
+      align-items: center;
+    }
+
+    .challenge-block__text p {
+      color: var(--color-text-muted);
+      font-weight: var(--weight-light);
+      line-height: var(--leading-loose);
+      margin-bottom: var(--space-4);
+    }
+
+    .challenge-block__text p:first-of-type {
+      color: var(--color-text-light);
+      font-size: var(--text-lg);
+    }
+
+    @media (max-width: 768px) {
+      .sf-hero {
+        min-height: 350px;
+      }
+
+      .before-after {
+        grid-template-columns: 1fr;
+      }
+
+      .tech-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .challenge-block {
+        grid-template-columns: 1fr;
+        gap: var(--space-8);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <a href="#main" class="skip-link">Aller au contenu principal</a>
+
+  <!-- HEADER -->
+  <header class="header" role="banner">
+    <div class="container">
+      <div class="header__inner">
+        <a href="index.html" class="header__logo" aria-label="Orion Construction — Accueil">
+          <img src="images/logo_white.svg" alt="Orion Construction" class="header__logo-icon">
+        </a>
+
+        <nav class="header__nav" aria-label="Navigation principale">
+          <ul class="header__nav-links">
+            <li><a href="index.html#services" class="header__nav-link">Services</a></li>
+            <li><a href="realisations.html" class="header__nav-link">Réalisations</a></li>
+            <li><a href="a-propos.html" class="header__nav-link">À propos</a></li>
+            <li><a href="zone-intervention.html" class="header__nav-link">Zone</a></li>
+            <li><a href="contact.html" class="header__nav-link">Contact</a></li>
+          </ul>
+
+          <a href="tel:+33767996896" class="header__phone" aria-label="Appelez-nous">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            <span>07 67 99 68 96</span>
+          </a>
+
+          <a href="contact.html" class="btn btn--primary btn--sm header__cta">Demander un devis</a>
+        </nav>
+
+        <button class="header__hamburger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE MENU -->
+  <nav class="mobile-menu" id="mobile-menu" aria-label="Menu mobile" aria-hidden="true">
+    <ul class="mobile-menu__links">
+      <li><a href="index.html" class="mobile-menu__link">Accueil</a></li>
+      <li><a href="index.html#services" class="mobile-menu__link">Services</a></li>
+      <li><a href="realisations.html" class="mobile-menu__link">Réalisations</a></li>
+      <li><a href="a-propos.html" class="mobile-menu__link">À propos</a></li>
+      <li><a href="zone-intervention.html" class="mobile-menu__link">Zone d'intervention</a></li>
+      <li><a href="contact.html" class="mobile-menu__link">Contact</a></li>
+    </ul>
+    <div class="mobile-menu__contact">
+      <a href="tel:+33767996896" class="btn btn--primary">07 67 99 68 96</a>
+      <a href="contact.html" class="btn btn--outline">Demander un devis</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="sf-hero">
+    <div class="sf-hero__bg">
+      <img src="images/extension_escalier/après.jpeg" alt="Marches en béton armé élargies en porte-à-faux — Orion Construction" width="2048" height="1536" fetchpriority="high">
+    </div>
+    <div class="sf-hero__overlay"></div>
+    <div class="container">
+      <div class="sf-hero__content">
+        <nav class="breadcrumb" aria-label="Fil d'Ariane">
+          <a href="index.html">Accueil</a>
+          <span class="breadcrumb__separator" aria-hidden="true">/</span>
+          <span>Savoir-faire</span>
+          <span class="breadcrumb__separator" aria-hidden="true">/</span>
+          <span aria-current="page">Extension d'escalier en porte-à-faux</span>
+        </nav>
+        <span class="sf-badge">Savoir-faire</span>
+        <h1 style="font-size: clamp(2rem, 5vw, var(--text-4xl)); font-weight: var(--weight-light); color: var(--color-white); margin-bottom: var(--space-4); max-width: 700px;">Extension d'escalier en porte-à-faux</h1>
+        <p style="font-size: var(--text-lg); font-weight: var(--weight-light); color: var(--color-text-muted); max-width: 550px;">Élargir des marches en béton armé ancrées sur un seul mur porteur, sans aucun appui latéral — un défi structurel qui exige précision et maîtrise du béton armé.</p>
+      </div>
+    </div>
+  </section>
+
+  <main id="main">
+
+    <!-- LE DÉFI TECHNIQUE -->
+    <section class="section--dark" aria-labelledby="challenge-heading">
+      <div class="container">
+        <div class="challenge-block reveal">
+          <div class="challenge-block__text">
+            <span class="overline">Le défi</span>
+            <h2 id="challenge-heading" style="margin-bottom: var(--space-6);">Un escalier qui ne tient que par un mur</h2>
+            <p>Un escalier en porte-à-faux est un ouvrage où chaque marche est encastrée dans un seul mur porteur, sans limon, sans poteau, sans appui du côté libre. Toute la charge transite par l'ancrage latéral. C'est un principe structurel élégant — mais qui ne tolère aucune approximation.</p>
+            <p>Ici, le client avait besoin d'élargir les marches existantes pour gagner en confort et en sécurité de passage. L'intervention consiste à prolonger chaque marche en béton armé tout en conservant le principe du porte-à-faux : l'extension doit être solidaire de la marche d'origine, avec un ferraillage continu et un ancrage suffisant pour reprendre les efforts supplémentaires.</p>
+            <p>Ce type d'intervention nécessite une lecture précise de la structure existante, un ferraillage dimensionné pour les nouvelles charges, et un coffrage sur mesure adapté à la géométrie de chaque marche.</p>
+          </div>
+          <div style="aspect-ratio: 3/4; overflow: hidden;">
+            <img src="images/extension_escalier/avant.jpeg" alt="Coffrage et ferraillage en place pour l'élargissement des marches — vue du chantier" width="1152" height="2048" loading="lazy" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AVANT / APRÈS -->
+    <section class="section--darker" aria-labelledby="ba-heading">
+      <div class="container">
+        <div class="reveal" style="text-align: center; margin-bottom: var(--space-12);">
+          <span class="overline">Résultat</span>
+          <h2 id="ba-heading">Avant &amp; Après</h2>
+        </div>
+
+        <div class="before-after reveal">
+          <div class="before-after__item">
+            <span class="before-after__label">Avant</span>
+            <img src="images/extension_escalier/avant.jpeg" alt="Escalier en porte-à-faux avant intervention — coffrage bois et armatures en acier posés sur les marches existantes" width="1152" height="2048" loading="lazy">
+          </div>
+          <div class="before-after__item">
+            <span class="before-after__label before-after__label--after">Après</span>
+            <img src="images/extension_escalier/après.jpeg" alt="Escalier en porte-à-faux après coulage — marches élargies en béton brut, porte-à-faux conservé" width="2048" height="1536" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ÉTAPES TECHNIQUES -->
+    <section class="section--dark section--pattern" aria-labelledby="tech-heading">
+      <div class="container">
+        <div class="reveal" style="text-align: center; margin-bottom: var(--space-12);">
+          <span class="overline">Méthode</span>
+          <h2 id="tech-heading">Les étapes clés de l'intervention</h2>
+        </div>
+
+        <div class="tech-grid reveal-stagger">
+
+          <div class="tech-card">
+            <span class="tech-card__number">01</span>
+            <h3 class="tech-card__title">Analyse structurelle</h3>
+            <p class="tech-card__desc">Avant toute intervention, l'escalier existant est analysé : épaisseur des marches, profondeur d'encastrement dans le mur, état du béton et des armatures d'origine. Cette étape détermine la faisabilité de l'extension et le dimensionnement du ferraillage complémentaire.</p>
+          </div>
+
+          <div class="tech-card">
+            <span class="tech-card__number">02</span>
+            <h3 class="tech-card__title">Coffrage sur mesure</h3>
+            <p class="tech-card__desc">Chaque marche reçoit un coffrage en bois et contreplaqué filmé, ajusté à sa géométrie exacte. Le coffrage doit reprendre le poids du béton frais tout en maintenant l'alignement avec les marches existantes. Les étais sont calés avec précision pour garantir la planéité.</p>
+          </div>
+
+          <div class="tech-card">
+            <span class="tech-card__number">03</span>
+            <h3 class="tech-card__title">Ferraillage</h3>
+            <p class="tech-card__desc">Des cages d'armature en acier sont façonnées et liées aux fers existants par recouvrement. Le treillis soudé assure la reprise des efforts de flexion et de cisaillement dans la zone d'extension. L'enrobage est respecté pour garantir la durabilité de l'ouvrage.</p>
+          </div>
+
+          <div class="tech-card">
+            <span class="tech-card__number">04</span>
+            <h3 class="tech-card__title">Coulage du béton</h3>
+            <p class="tech-card__desc">Le béton est coulé marche par marche, vibré pour éliminer les bulles d'air et assurer un remplissage homogène du coffrage. La continuité entre le béton existant et le béton neuf est primordiale pour la tenue structurelle de l'ensemble.</p>
+          </div>
+
+          <div class="tech-card">
+            <span class="tech-card__number">05</span>
+            <h3 class="tech-card__title">Décoffrage et contrôle</h3>
+            <p class="tech-card__desc">Après le temps de séchage nécessaire, les coffrages sont retirés. Chaque marche est inspectée : alignement, absence de fissures, qualité de surface. Le résultat final est un escalier élargi, structurellement sain, prêt à recevoir sa finition.</p>
+          </div>
+
+          <div class="tech-card">
+            <span class="tech-card__number">06</span>
+            <h3 class="tech-card__title">Principe du porte-à-faux</h3>
+            <p class="tech-card__desc">Le porte-à-faux repose sur un encastrement suffisant dans le mur porteur. L'extension des marches augmente le bras de levier et donc le moment de flexion à l'encastrement. Le ferraillage complémentaire est dimensionné en conséquence pour garantir la stabilité de l'ensemble.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section section--darker" aria-labelledby="cta-heading">
+      <div class="container">
+        <div class="reveal">
+          <span class="overline" style="text-align: center; display: block;">Votre projet</span>
+          <h2 class="cta-section__title" id="cta-heading">Un ouvrage technique<br>à réaliser ?</h2>
+          <p class="cta-section__subtitle">Escaliers, reprises en sous-œuvre, extensions structurelles — nous intervenons sur les projets qui demandent une vraie maîtrise du béton armé.</p>
+          <div style="display: flex; justify-content: center; gap: var(--space-4); flex-wrap: wrap;">
+            <a href="contact.html" class="btn btn--primary btn--lg">Demander un devis</a>
+            <a href="tel:+33767996896" class="btn btn--outline btn--lg">07 67 99 68 96</a>
+          </div>
+          <p style="margin-top: var(--space-8); font-size: var(--text-sm); color: var(--color-text-faint);">Lundi – Vendredi : 7h – 18h · Samedi : 8h – 14h</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+
+        <div class="footer__brand">
+          <a href="index.html" class="header__logo" aria-label="Orion Construction">
+            <img src="images/logo_white.svg" alt="Orion Construction" class="header__logo-icon">
+          </a>
+          <p class="footer__brand-description">Gros œuvre, rénovation, carrelage, béton ciré et plomberie-électricité dans les Alpes-Maritimes.</p>
+        </div>
+
+        <div>
+          <h3 class="footer__heading">Services</h3>
+          <ul class="footer__links">
+            <li><a href="construction.html">Gros œuvre</a></li>
+            <li><a href="renovation.html">Rénovation</a></li>
+            <li><a href="carrelage.html">Carrelage &amp; faïence</a></li>
+            <li><a href="beton-cire.html">Béton ciré</a></li>
+            <li><a href="index.html#collaborateurs">Plomberie &amp; électricité</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer__heading">Entreprise</h3>
+          <ul class="footer__links">
+            <li><a href="realisations.html">Réalisations</a></li>
+            <li><a href="a-propos.html">À propos</a></li>
+            <li><a href="zone-intervention.html">Zone d'intervention</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="mentions-legales.html">Mentions légales</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer__heading">Contact</h3>
+          <ul class="footer__links">
+            <li><a href="tel:+33767996896">07 67 99 68 96</a></li>
+            <li><a href="mailto:contact@orion-construction.fr">contact@orion-construction.fr</a></li>
+            <li>14 rue François Carlo</li>
+            <li style="margin-top: var(--space-4); font-size: var(--text-xs); color: var(--color-text-faint);">Lun – Ven : 7h – 18h<br>Sam : 8h – 14h</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer__bottom">
+        <span>&copy; 2026 Orion Construction — SIRET 108 530 254 00011</span>
+        <a href="mentions-legales.html">Mentions légales</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MOBILE STICKY CTA -->
+  <div class="mobile-cta" aria-label="Actions rapides">
+    <a href="tel:+33767996896" class="btn btn--outline btn--sm">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+      Appeler
+    </a>
+    <a href="contact.html" class="btn btn--primary btn--sm">Demander un devis</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

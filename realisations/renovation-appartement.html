@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rénovation complète d'appartement — Orion Construction</title>
+  <meta name="description" content="Rénovation intégrale d'un appartement dans les Alpes-Maritimes : salle de bain, cuisine, pièce de vie. Avant/après d'une transformation complète par Orion Construction.">
+  <meta name="theme-color" content="#111111">
+  <link rel="canonical" href="https://www.orion-construction.fr/realisations/renovation-appartement.html">
+
+  <meta property="og:title" content="Rénovation complète d'appartement — Orion Construction">
+  <meta property="og:description" content="Transformation intégrale d'un appartement — salle de bain, cuisine, pièce de vie. Avant/après dans les Alpes-Maritimes.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.orion-construction.fr/realisations/renovation-appartement.html">
+  <meta property="og:image" content="https://www.orion-construction.fr/images/appart_renovation/kitchen/après.jpeg">
+  <meta property="og:locale" content="fr_FR">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://www.orion-construction.fr/" },
+      { "@type": "ListItem", "position": 2, "name": "Réalisations", "item": "https://www.orion-construction.fr/realisations.html" },
+      { "@type": "ListItem", "position": 3, "name": "Rénovation appartement", "item": "https://www.orion-construction.fr/realisations/renovation-appartement.html" }
+    ]
+  }
+  </script>
+
+  <style>
+    .project-hero {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16/9;
+      max-height: 70vh;
+      overflow: hidden;
+    }
+    .project-hero img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: brightness(0.7);
+    }
+    .project-hero__overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(17,17,17,0.8) 0%, transparent 50%);
+    }
+    .project-meta {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: var(--space-6);
+      padding: var(--space-8) 0;
+      border-top: 1px solid var(--color-dark-border);
+      border-bottom: 1px solid var(--color-dark-border);
+    }
+    .project-meta__item {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-1);
+    }
+    .project-meta__label {
+      font-size: var(--text-xs);
+      font-weight: var(--weight-medium);
+      letter-spacing: var(--tracking-widest);
+      text-transform: uppercase;
+      color: var(--color-bronze);
+    }
+    .project-meta__value {
+      font-size: var(--text-base);
+      font-weight: var(--weight-light);
+      color: var(--color-text-light);
+    }
+    .project-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: var(--space-8) 0;
+      border-top: 1px solid var(--color-dark-border);
+    }
+    .project-nav a {
+      font-size: var(--text-sm);
+      font-weight: var(--weight-medium);
+      letter-spacing: var(--tracking-wide);
+      text-transform: uppercase;
+      color: var(--color-text-muted);
+      transition: color var(--duration-fast) ease;
+    }
+    .project-nav a:hover {
+      color: var(--color-bronze);
+    }
+
+    /* Before / After comparison */
+    .ba-section {
+      padding: var(--space-10) 0;
+    }
+    .ba-section + .ba-section {
+      border-top: 1px solid var(--color-dark-border);
+    }
+    .ba-section__title {
+      font-size: var(--text-xs);
+      font-weight: var(--weight-medium);
+      color: var(--color-bronze);
+      letter-spacing: var(--tracking-widest);
+      text-transform: uppercase;
+      margin-bottom: var(--space-6);
+    }
+    .ba-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-4);
+    }
+    .ba-card {
+      position: relative;
+      overflow: hidden;
+      aspect-ratio: 3/4;
+    }
+    .ba-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform var(--duration-slow) var(--ease-out);
+    }
+    .ba-card:hover img {
+      transform: scale(1.03);
+    }
+    .ba-card__label {
+      position: absolute;
+      top: var(--space-4);
+      left: var(--space-4);
+      padding: 6px 16px;
+      font-size: var(--text-xs);
+      font-weight: var(--weight-medium);
+      letter-spacing: var(--tracking-wider);
+      text-transform: uppercase;
+      z-index: 2;
+    }
+    .ba-card__label--avant {
+      background: rgba(17, 17, 17, 0.75);
+      color: var(--color-text-muted);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .ba-card__label--apres {
+      background: rgba(184, 151, 106, 0.85);
+      color: var(--color-dark);
+    }
+    .ba-card__overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(17,17,17,0.4) 0%, transparent 40%);
+    }
+
+    @media (max-width: 768px) {
+      .project-hero { aspect-ratio: 4/3; }
+      .ba-grid { grid-template-columns: 1fr; }
+      .ba-card { aspect-ratio: 4/3; }
+    }
+  </style>
+</head>
+<body>
+
+  <a href="#main" class="skip-link">Aller au contenu principal</a>
+
+  <!-- HEADER -->
+  <header class="header" role="banner">
+    <div class="container">
+      <div class="header__inner">
+        <a href="../index.html" class="header__logo" aria-label="Orion Construction — Accueil">
+          <img src="../images/logo_white.svg" alt="Orion Construction" class="header__logo-icon">
+        </a>
+        <nav class="header__nav" aria-label="Navigation principale">
+          <ul class="header__nav-links">
+            <li><a href="../index.html#services" class="header__nav-link">Services</a></li>
+            <li><a href="../realisations.html" class="header__nav-link header__nav-link--active">Réalisations</a></li>
+            <li><a href="../a-propos.html" class="header__nav-link">À propos</a></li>
+            <li><a href="../zone-intervention.html" class="header__nav-link">Zone</a></li>
+            <li><a href="../contact.html" class="header__nav-link">Contact</a></li>
+          </ul>
+          <a href="tel:+33767996896" class="header__phone" aria-label="Appelez-nous">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            <span>07 67 99 68 96</span>
+          </a>
+          <a href="../contact.html" class="btn btn--primary btn--sm header__cta">Demander un devis</a>
+        </nav>
+        <button class="header__hamburger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE MENU -->
+  <nav class="mobile-menu" id="mobile-menu" aria-label="Menu mobile" aria-hidden="true">
+    <ul class="mobile-menu__links">
+      <li><a href="../index.html" class="mobile-menu__link">Accueil</a></li>
+      <li><a href="../index.html#services" class="mobile-menu__link">Services</a></li>
+      <li><a href="../realisations.html" class="mobile-menu__link">Réalisations</a></li>
+      <li><a href="../a-propos.html" class="mobile-menu__link">À propos</a></li>
+      <li><a href="../zone-intervention.html" class="mobile-menu__link">Zone d'intervention</a></li>
+      <li><a href="../contact.html" class="mobile-menu__link">Contact</a></li>
+    </ul>
+    <div class="mobile-menu__contact">
+      <a href="tel:+33767996896" class="btn btn--primary">07 67 99 68 96</a>
+      <a href="../contact.html" class="btn btn--outline">Demander un devis</a>
+    </div>
+  </nav>
+
+  <main id="main">
+
+    <!-- BREADCRUMB -->
+    <div class="section--dark" style="padding: calc(80px + var(--space-6)) 0 var(--space-4);">
+      <div class="container">
+        <nav aria-label="Fil d'Ariane">
+          <ol style="display: flex; gap: var(--space-2); list-style: none; font-size: var(--text-sm); color: var(--color-text-muted);">
+            <li><a href="../index.html" style="color: var(--color-text-muted);">Accueil</a></li>
+            <li aria-hidden="true">/</li>
+            <li><a href="../realisations.html" style="color: var(--color-text-muted);">Réalisations</a></li>
+            <li aria-hidden="true">/</li>
+            <li aria-current="page" style="color: var(--color-bronze);">Rénovation appartement</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+
+    <!-- PROJECT HERO IMAGE -->
+    <div class="project-hero">
+      <img src="../images/appart_renovation/kitchen/après.jpeg" alt="Cuisine ouverte après rénovation complète — Orion Construction, Alpes-Maritimes" width="2048" height="1536" fetchpriority="high">
+      <div class="project-hero__overlay"></div>
+    </div>
+
+    <!-- PROJECT CONTENT -->
+    <section class="section--dark" style="padding-top: var(--space-12);">
+      <div class="container" style="max-width: 900px;">
+
+        <span class="overline">Rénovation</span>
+        <h1 style="font-size: var(--text-4xl); font-weight: var(--weight-light); margin-bottom: var(--space-2);">Rénovation complète d'appartement</h1>
+        <p style="font-size: var(--text-sm); color: var(--color-text-muted); margin-bottom: var(--space-10);">Alpes-Maritimes (06)</p>
+
+        <!-- TECHNICAL META -->
+        <div class="project-meta reveal">
+          <div class="project-meta__item">
+            <span class="project-meta__label">Type</span>
+            <span class="project-meta__value">Rénovation intégrale</span>
+          </div>
+          <div class="project-meta__item">
+            <span class="project-meta__label">Pièces</span>
+            <span class="project-meta__value">Cuisine, séjour, salle de bain</span>
+          </div>
+          <div class="project-meta__item">
+            <span class="project-meta__label">Travaux</span>
+            <span class="project-meta__value">Tous corps d'état</span>
+          </div>
+          <div class="project-meta__item">
+            <span class="project-meta__label">Finitions</span>
+            <span class="project-meta__value">Haut de gamme</span>
+          </div>
+        </div>
+
+        <!-- ÉTUDE DE CAS -->
+        <div class="reveal" style="padding: var(--space-12) 0; display: flex; flex-direction: column; gap: var(--space-8);">
+
+          <div>
+            <h2 style="font-size: var(--text-xs); font-weight: var(--weight-medium); color: var(--color-bronze); margin-bottom: var(--space-3); letter-spacing: var(--tracking-wide); text-transform: uppercase;">Contexte</h2>
+            <p style="font-size: var(--text-lg); font-weight: var(--weight-light); color: var(--color-text-muted); line-height: var(--leading-loose);">Cet appartement nécessitait une rénovation intégrale. L'état initial présentait des revêtements vétustes, une salle de bain datée, une cuisine non fonctionnelle et des espaces de vie à repenser entièrement. Le projet couvrait l'ensemble des corps de métier : démolition, gros œuvre, plomberie, électricité, carrelage, peinture, menuiserie et aménagement.</p>
+          </div>
+
+          <div>
+            <h2 style="font-size: var(--text-xs); font-weight: var(--weight-medium); color: var(--color-bronze); margin-bottom: var(--space-3); letter-spacing: var(--tracking-wide); text-transform: uppercase;">Approche</h2>
+            <p style="font-size: var(--text-lg); font-weight: var(--weight-light); color: var(--color-text-muted); line-height: var(--leading-loose);">Chaque pièce a été traitée avec une attention particulière aux matériaux et aux finitions. Le choix d'un parquet chêne clair, de carrelage grand format effet ardoise pour la salle de bain, et d'une cuisine laquée gris anthracite crée une cohérence visuelle à travers tout l'appartement. Robinetterie noire, profilés aluminium, éclairage encastré — chaque détail contribue au résultat final.</p>
+          </div>
+
+        </div>
+
+        <!-- AVANT / APRÈS : SALLE DE BAIN -->
+        <div class="ba-section reveal">
+          <h2 class="ba-section__title">Salle de bain</h2>
+          <div class="ba-grid">
+            <div class="ba-card">
+              <span class="ba-card__label ba-card__label--avant">Avant</span>
+              <img src="../images/appart_renovation/bathroom/SDB_avant.jpeg" alt="Salle de bain avant rénovation — carrelage damier bleu et blanc, cabine de douche vétuste" width="1536" height="2048" loading="lazy">
+              <div class="ba-card__overlay"></div>
+            </div>
+            <div class="ba-card">
+              <span class="ba-card__label ba-card__label--apres">Après</span>
+              <img src="../images/appart_renovation/bathroom/SDB_finale.jpeg" alt="Salle de bain après rénovation — carrelage gris ardoise, douche profilés noirs, meuble vasque bois" width="1536" height="2048" loading="lazy">
+              <div class="ba-card__overlay"></div>
+            </div>
+          </div>
+          <p style="font-size: var(--text-sm); font-weight: var(--weight-light); color: var(--color-text-muted); line-height: var(--leading-normal); margin-top: var(--space-6);">Transformation radicale : l'ancien carrelage à damier et la cabine de douche vieillissante laissent place à un espace contemporain. Carrelage mural grand format gris ardoise, cabine de douche avec profilés noirs, meuble vasque suspendu en bois, miroir rond et sol en parquet imitation bois.</p>
+        </div>
+
+        <!-- AVANT / APRÈS : PIÈCE DE VIE -->
+        <div class="ba-section reveal">
+          <h2 class="ba-section__title">Pièce de vie</h2>
+          <div class="ba-grid">
+            <div class="ba-card">
+              <span class="ba-card__label ba-card__label--avant">Avant</span>
+              <img src="../images/appart_renovation/living_room/pdt.jpeg" alt="Pièce de vie avant rénovation — parquet usé, murs défraîchis, outillage de chantier" width="2048" height="1536" loading="lazy">
+              <div class="ba-card__overlay"></div>
+            </div>
+            <div class="ba-card">
+              <span class="ba-card__label ba-card__label--apres">Après</span>
+              <img src="../images/appart_renovation/living_room/après.jpeg" alt="Chambre après rénovation — parquet chêne clair, mur accent vert kaki, décoration soignée" width="1536" height="2048" loading="lazy">
+              <div class="ba-card__overlay"></div>
+            </div>
+          </div>
+          <p style="font-size: var(--text-sm); font-weight: var(--weight-light); color: var(--color-text-muted); line-height: var(--leading-normal); margin-top: var(--space-6);">D'un espace vide aux murs défraîchis à une chambre chaleureuse et moderne. Pose de parquet chêne clair, mur d'accent vert kaki, éclairage soigné avec suspension et lampadaire. L'ambiance mêle tons neutres et touches de couleur terracotta.</p>
+        </div>
+
+        <!-- AVANT / APRÈS : CUISINE -->
+        <div class="ba-section reveal">
+          <h2 class="ba-section__title">Cuisine ouverte</h2>
+          <div class="ba-grid">
+            <div class="ba-card">
+              <span class="ba-card__label ba-card__label--avant">Avant</span>
+              <img src="../images/appart_renovation/kitchen/pdt.jpeg" alt="Cuisine pendant les travaux — meubles en cours d'installation, chape au sol, matériel de chantier" width="1536" height="2048" loading="lazy">
+              <div class="ba-card__overlay"></div>
+            </div>
+            <div class="ba-card">
+              <span class="ba-card__label ba-card__label--apres">Après</span>
+              <img src="../images/appart_renovation/kitchen/après.jpeg" alt="Cuisine ouverte après rénovation — meubles gris anthracite laqués, électroménager intégré, espace repas" width="2048" height="1536" loading="lazy">
+              <div class="ba-card__overlay"></div>
+            </div>
+          </div>
+          <p style="font-size: var(--text-sm); font-weight: var(--weight-light); color: var(--color-text-muted); line-height: var(--leading-normal); margin-top: var(--space-6);">La cuisine ouverte sur le séjour offre un espace fonctionnel et lumineux. Meubles hauts et bas gris anthracite laqués, électroménager intégré, plan de travail clair. L'espace repas avec table en bois et chaises scandinaves complète l'ensemble avec fluidité.</p>
+        </div>
+
+        <!-- NAVIGATION PROJETS -->
+        <div class="project-nav">
+          <a href="../realisations.html">← Toutes les réalisations</a>
+          <a href="escalier-beton-arme-villa.html">Projet suivant →</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section section--darker">
+      <div class="container">
+        <div class="reveal">
+          <span class="overline" style="text-align: center; display: block;">Votre projet</span>
+          <h2 class="cta-section__title">Vous avez un projet similaire ?</h2>
+          <p class="cta-section__subtitle">Premier rendez-vous sur site. Devis détaillé sous 10 jours.</p>
+          <div style="display: flex; justify-content: center; gap: var(--space-4); flex-wrap: wrap;">
+            <a href="../contact.html?service=renovation" class="btn btn--primary btn--lg">Demander un devis rénovation</a>
+            <a href="tel:+33767996896" class="btn btn--outline btn--lg">07 67 99 68 96</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="../index.html" class="header__logo" aria-label="Orion Construction">
+            <img src="../images/logo_white.svg" alt="Orion Construction" class="header__logo-icon">
+          </a>
+          <p class="footer__brand-description">Gros œuvre, rénovation, carrelage, béton ciré et plomberie-électricité dans les Alpes-Maritimes.</p>
+        </div>
+        <div>
+          <h3 class="footer__heading">Services</h3>
+          <ul class="footer__links">
+            <li><a href="../construction.html">Gros œuvre</a></li>
+            <li><a href="../renovation.html">Rénovation</a></li>
+            <li><a href="../carrelage.html">Carrelage &amp; faïence</a></li>
+            <li><a href="../beton-cire.html">Béton ciré</a></li>
+            <li><a href="../index.html#collaborateurs">Plomberie &amp; électricité</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer__heading">Entreprise</h3>
+          <ul class="footer__links">
+            <li><a href="../realisations.html">Réalisations</a></li>
+            <li><a href="../a-propos.html">À propos</a></li>
+            <li><a href="../zone-intervention.html">Zone d'intervention</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+            <li><a href="../mentions-legales.html">Mentions légales</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer__heading">Contact</h3>
+          <ul class="footer__links">
+            <li><a href="tel:+33767996896">07 67 99 68 96</a></li>
+            <li><a href="mailto:contact@orion-construction.fr">contact@orion-construction.fr</a></li>
+            <li>14 rue François Carlo</li>
+            <li style="margin-top: var(--space-4); font-size: var(--text-xs); color: var(--color-text-faint);">Lun – Ven : 7h – 18h<br>Sam : 8h – 14h</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2026 Orion Construction — SIRET 108 530 254 00011</span>
+        <a href="../mentions-legales.html">Mentions légales</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="mobile-cta" aria-label="Actions rapides">
+    <a href="tel:+33767996896" class="btn btn--outline btn--sm">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+      Appeler
+    </a>
+    <a href="../contact.html?service=renovation" class="btn btn--primary btn--sm">Devis rénovation</a>
+  </div>
+
+  <script src="../script.js"></script>
+</body>
+</html>
