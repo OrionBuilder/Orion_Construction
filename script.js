@@ -164,9 +164,12 @@
   const form = document.querySelector('.contact-form');
 
   if (form) {
-    form.addEventListener('submit', function (e) {
+    form.addEventListener('submit', async function (e) {
       e.preventDefault();
       let isValid = true;
+      const submitBtn = form.querySelector('[type="submit"]');
+      const statusEl = form.querySelector('.form__status');
+      const successEl = document.querySelector('#form-success');
 
       form.querySelectorAll('[required]').forEach(function (field) {
         const errorEl = field.parentElement.querySelector('.form__error');
@@ -190,11 +193,42 @@
         }
       });
 
-      if (isValid) {
-        const submitBtn = form.querySelector('[type="submit"]');
+      if (!isValid) return;
+
+      if (statusEl) {
+        statusEl.textContent = '';
+        statusEl.classList.remove('is-visible');
+      }
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Envoi en cours…';
+      }
+
+      try {
+        const response = await fetch(form.action, {
+          method: 'POST',
+          body: new FormData(form),
+          headers: {
+            Accept: 'application/json'
+          }
+        });
+        const result = await response.json();
+
+        if (!response.ok || !result.success) {
+          throw new Error(result.message || 'La demande n’a pas pu être envoyée.');
+        }
+
+        form.reset();
+        form.hidden = true;
+        if (successEl) successEl.classList.add('is-visible');
+      } catch (error) {
+        if (statusEl) {
+          statusEl.textContent = error.message || 'Une erreur est survenue. Veuillez réessayer ou nous appeler.';
+          statusEl.classList.add('is-visible');
+        }
         if (submitBtn) {
-          submitBtn.textContent = 'Message envoyé';
-          submitBtn.disabled = true;
+          submitBtn.disabled = false;
+          submitBtn.textContent = 'Envoyer ma demande';
         }
       }
     });
